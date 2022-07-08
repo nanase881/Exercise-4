@@ -2,12 +2,18 @@ import java.util.*;
 
 class HoT{
     static void Toss(){
+	Scanner s = new Scanner(System.in);
 	Random rand = new Random();
 	int head = 0;
 	int tail = 0;
 	int coin;
 	String result;
+	String name;
 
+	System.out.println("Who are you?");
+	name = s.next();
+	System.out.println("Hello, " + name + "!");
+	
 	System.out.println("Tossing a coin...");
 
 	for(int i = 0; i < 3; i++){
